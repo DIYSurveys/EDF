@@ -1,10 +1,13 @@
 # OnePoint Global Entity Data Framework
-Welcome to the OnePoint Global Entity Data Framework (OPGEDF). A set of libraries that supports access to Microsoft SQL Server and other databases. It provides a fast, light way to map a Database into code and prvoide a simple way to insert, update and delete data, with full access to stored procedures.
+Welcome to the OnePoint Global Entity Data Framework (OPGEDF). A set of libraries that supports access to Microsoft SQL 
+Server and other databases. It provides a fast, light way to map a Database into code and prvoide a simple way to insert, 
+update and delete data, with full access to stored procedures. It is based on the [NEO Framework](http://neo.sourceforge.net/).
 
 This contains the documentation to use the OPGEDF.
 
 ## Current Status
-The OPGEDF is currently undergoing some enhancements to support asynchronous access to MS SQL Server, but the library and tools are stable and will support existing projects.
+The OPGEDF is currently undergoing some enhancements to support asynchronous access to MS SQL Server, but the library and 
+tools are stable and will support existing projects.
 
 ## Modeller
 The OnePoint Modeller is a tool that provides fast mapping of a Microsoft SQL Database into c# for immediate use in an application. The Modeller is based around a an XML language and a set of templates that are used to generate the c# code. The example below shows a sample of an XML model:
@@ -44,7 +47,27 @@ GroupsFactoryBase.cs | A class that include all the basic code for accessing an 
 IGroupsData.cs | Interface to the base data layout.
 IGroupsFactoryData.cs | Interface to the base factory for accessing the data.
 
-The template files are
-
+## Visual Studio Modeller Extension
 The Modeller is available for use with Microsoft Visual Studio 2019 and can be downloaded from here.
+
+### Steps to using the Modeller
+1. Create a new project or a new folder in an existing project.
+2. In the folder create another folder called Templates.
+3. In the Templates folder add the templates, which can be downloaded from here.
+4. In the new folder create your model.xml file and place your Entity model definition in there.
+5. Change the `Custom Tool` property of the model.xml to `OnePointModeller`.
+6. Save the `model.xml` file and in doing so it will generate the code c# files in the same folder.
+
+In order to compile the code you will need to include a couple of librearies from Nuget:
+
+Name | Description
+---- | -----------
+OnePoint.Data | The main data access library. Currently geared towards Microsoft SQL Server.
+OnePoint.Logging | A wrapper used by OnePoint.Data to access log4net.
+log4net | A logging facility.
+
+## Using Your Model
+To find out more about using your model click here.
+
+
 
