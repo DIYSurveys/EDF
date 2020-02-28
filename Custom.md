@@ -1,3 +1,5 @@
+[Back to the top](README.md)
+
 ## Custom Queries
 This section assumes you have read the previous section [Using Your Model](Using.md).
 

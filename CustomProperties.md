@@ -1,3 +1,5 @@
+[Back to the top](README.md)
+
 ## Custom Properties
 This section assumes you had read the previous section. [Click here](Relational.md) for more information.
 This section covers custom properties and methods for an object.

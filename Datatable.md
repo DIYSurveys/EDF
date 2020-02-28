@@ -1,3 +1,5 @@
+[Back to the top](README.md)
+
 ## Dynamic Datatables
 This section assumes you have read the previous sections. [Click here](Asynchronous.md) to find out more.
 
