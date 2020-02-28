@@ -17,6 +17,8 @@ This contains the documentation to use the OPGEDF. This guide contains:
 10. [Housekeeping](Rules.md)
 
 ### Current Status
+![passing](https://img.shields.io/badge/status-live-brightgreen)
+
 The OPGEDF is currently undergoing some enhancements to support asynchronous access to MS SQL Server, but the library and 
 tools are stable and will support existing projects.
 
@@ -24,6 +26,10 @@ tools are stable and will support existing projects.
 OnePoint Global takes the quality of its software serious and customer satisfaction is extremely important. 
 If you experience and issue then you should report it through the public GitHub Issues. 
 If you believe the the issue is related to the security of the service then please contact us directly.
+
+### Request a New Feature
+We are always interested in your feedback and thoughts on new features. 
+If you have a suggestion then you should report it through the public GitHub Issues and label it as a "New Feature".
 
 ## The OnePoint Modeller
 The OnePoint Modeller is a tool that provides fast mapping of a Microsoft SQL Database into c# for immediate use in an application. The Modeller is based around a an XML language and a set of templates that are used to generate the c# code. The example below shows a sample of an XML model:
