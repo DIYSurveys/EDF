@@ -40,7 +40,7 @@ all the group by the their name. For example:
 
 Each table will have a primary key and that can be used to access a single row. For example:
 ```
-    Groups group = new GroupsFactory().FindOvject(groupId);
+    Groups group = new GroupsFactory().FindObject(groupId);
 ```
 
 For more information on custom queries to access data [click here](Custom.md).
