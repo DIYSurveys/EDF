@@ -67,7 +67,7 @@ OnePoint.Logging | A wrapper used by OnePoint.Data to access log4net.
 log4net | A logging facility.
 
 ## Using Your Model
-To find out more about using your model click here.
+To find out more about using your model [click here](Using.md).
 
 
 
