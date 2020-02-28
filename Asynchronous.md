@@ -1,4 +1,5 @@
 ## Asynchonrous Database Access
+This section assumes you understand the OPGDEF in more detail. To find out more please [click here](Relational.md).
 The OPGEDF offers asynchronous access to the database. Each object in the model has a factory that include asynchronous access.
 For example the Find method in the factory class offers an asynchronous option:
 ```

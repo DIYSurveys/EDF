@@ -41,3 +41,5 @@ if (group.LevelType == LevelDefinition.Admin)
     /// Do some admin type process
 }
 ```
+
+For information on Asynchronous Database access please [click here](Asynchronous.md).
