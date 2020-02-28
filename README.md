@@ -53,7 +53,7 @@ The Modeller is available for use with Microsoft Visual Studio 2019 and can be d
 ### Steps to using the Modeller
 1. Create a new project or a new folder in an existing project.
 2. In the folder create another folder called Templates.
-3. In the Templates folder add the templates, which can be downloaded from [here](/VisualStudio/templates).
+3. In the Templates folder add the templates, which can be downloaded from [here](/VisualStudio/Templates).
 4. In the new folder create your model.xml file and place your Entity model definition in there.
 5. Change the `Custom Tool` property of the model.xml to `OnePointModeller`.
 6. Save the `model.xml` file and in doing so it will generate the code c# files in the same folder.
