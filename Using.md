@@ -1,5 +1,5 @@
 ## Using Your Model
-This section assumes you have successfully followed the instruction in the main section [here](readme.md).
+This section assumes you have successfully followed the instruction in the main section [here](README.md).
 
 ### Configure the Environment
 Once you have created a basic model you need to configure the environment for the application.
@@ -20,7 +20,7 @@ Now you are ready to code using the model.
 
 #### Collecting Rows From a Table
 To Collect rows from a table you need to use the associated factory class. Given the basic Groups model that was created
-in the [introduction](readme.md) the factory class will be called GroupsFactory. In order to collect all the row in the Groups
+in the [introduction](README.md) the factory class will be called GroupsFactory. In order to collect all the row in the Groups
 table you can use the built in method as follows:
 ```
     List<Groups> groups = new GroupsFactory().FindAllObjects();
@@ -43,4 +43,4 @@ Each table will have a primary key and that can be used to access a single row. 
     Groups group = new GroupsFactory().FindOvject(groupId);
 ```
 
-For more information on custom queries to access data click here.
+For more information on custom queries to access data [click here](Custom.md).
