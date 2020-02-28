@@ -22,4 +22,4 @@ This will:
 ### Delete
 Delete is not available and would have to be added as a custom method. For more information on this [click here](Custom.md).
 
-To manage relational databases [click here](realtional.md).
+To manage relational databases [click here](relational.md).
