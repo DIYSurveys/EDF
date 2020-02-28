@@ -1,7 +1,8 @@
 # OnePoint Global Entity Data Framework
 Welcome to the OnePoint Global Entity Data Framework (OPGEDF). A set of libraries that supports access to Microsoft SQL 
 Server and other databases. It provides a fast, light way to map a Database into code and prvoide a simple way to insert, 
-update and delete data, with full access to stored procedures. It is based on the [NEO Framework](http://neo.sourceforge.net/).
+update and delete data, with full access to stored procedures using c#. 
+It is based on the [NEO Framework](http://neo.sourceforge.net/).
 
 ## Introduction
 This contains the documentation to use the OPGEDF. This guide contains:
