@@ -1,4 +1,4 @@
-## Dynamic Datatable
+## Dynamic Datatables
 This section assumes you have read the previous sections. [Click here](Asynchronous.md) to find out more.
 
 Microsoft offers a Datatable as a way of collecting bulk results from a database. This in turn uses the DataReader to
