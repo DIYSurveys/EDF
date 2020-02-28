@@ -28,16 +28,16 @@ public enum LevelDefinition
 ```
 This is used with the following property:
 ```
-    public LevelDefinition LevelType 
-    {
-        get => (LevelDefinition)this.Level;
-        set => this.Level = (int)value;
-    }
+public LevelDefinition LevelType 
+{
+    get => (LevelDefinition)this.Level;
+    set => this.Level = (int)value;
+}
 ```
 The new `LevelType` property can be used instead of the `Level` property in the model. For example:
 ```
-    if (group.LevelType == LevelDefinition.Admin) 
-    {
-        /// Do some admin type process
-    }
+if (group.LevelType == LevelDefinition.Admin) 
+{
+    /// Do some admin type process
+}
 ```
