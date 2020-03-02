@@ -52,3 +52,5 @@ For example:
 
 ### Using Asynchronous Methods
 Asynchronous methods require the connection to be open for longer over the whole process.
+To cater for this the DataReader and DataTable will automaitcally close the connection when it reaches the end of the rows.
+Otherwise you can close it by accessing the Dispose() methods of the DataReader or DataTable.
