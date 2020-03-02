@@ -91,7 +91,7 @@ Name | Description
 ---- | -----------
 OnePoint.Data | The main data access library. Currently geared towards Microsoft SQL Server.
 OnePoint.Logging | A wrapper used by OnePoint.Data to access log4net.
-log4net | A logging facility.
+log4net | [A logging facility](http://logging.apache.org/log4net/).
 
 ## Using Your Model
 To find out more about using your model [click here](Using.md).

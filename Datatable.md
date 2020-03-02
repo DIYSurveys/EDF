@@ -21,7 +21,7 @@ The Task returned can then be used at the appropriate point to gain access to Ro
 The Rows are available as an enumerator and can support each row (as read by a DataReader) as an ISqlAsyncRow object
 that includes an array accessible for each column by either name or zero based position. For example:
 ```
-    foreach(ISqlAsyncRow row in table.Rows)
+    foreach (ISqlAsyncRow row in table.Rows)
     {
         string name = row["Name"].ToString();
         long groupId = (long)row[0];
