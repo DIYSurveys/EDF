@@ -15,7 +15,7 @@ Consider the following two tables in a model:
 <?neo support="IClassNameData.vtl,IClassNameFactoryBase.vtl,ClassNameBase.vtl,ClassNameFactoryBase.vtl"?>
 <?neo user="ClassName.vtl,ClassNameFactory.vtl"?>
 
-<database name="$db{Framework}" package="OnePoint.PROM.Model" defaultJavaNamingMethod="javaname" defaultIdMethod="native">
+<database name="$db{Framework}" package="DiySurveys.Projects.Model" defaultJavaNamingMethod="javaname" defaultIdMethod="native">
   <!--START-PROJECT-STRUCTURE -->
   <table name="Group" database="$db{Framework}" javaName="Group">
     <column name="GroupID"  type="BIGINT" javaType="BIGINT" required="true" primaryKey="true" autoIncrement="true"  description=""  />

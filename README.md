@@ -1,11 +1,11 @@
-# OnePoint Global Entity Data Framework
-Welcome to the OnePoint Global Entity Data Framework (OPGEDF). A set of libraries that supports access to Microsoft SQL 
+# DIY Surveys Entity Data Framework
+Welcome to the DIY Surveys Entity Data Framework (DIYEDF). A set of libraries that supports access to Microsoft SQL 
 Server and other databases. It provides a fast, light way to map a Database into code and prvoide a simple way to insert, 
 update and delete data, with full access to stored procedures using c#. 
 It is based on the [NEO Framework](http://neo.sourceforge.net/).
 
 ## Introduction
-This contains the documentation to use the OPGEDF. This guide contains:
+This contains the documentation to use the DIYEDF. This guide contains:
 1. Current Status
 2. The OnePoint Modeller
 3. [Using Your Model](Using.md)
@@ -20,7 +20,7 @@ This contains the documentation to use the OPGEDF. This guide contains:
 ### Current Status
 ![passing](https://img.shields.io/badge/status-live-brightgreen)
 
-The OPGEDF is currently undergoing some enhancements to support asynchronous access to MS SQL Server, but the library and 
+The DIYEDF is currently undergoing some enhancements to support asynchronous access to MS SQL Server, but the library and 
 tools are stable and will support existing projects.
 
 ### Reporting Issues
@@ -32,8 +32,8 @@ If you believe the the issue is related to the security of the service then plea
 We are always interested in your feedback and thoughts on new features. 
 If you have a suggestion then you should report it through the public GitHub Issues and label it as a "New Feature".
 
-## The OnePoint Modeller
-The OnePoint Modeller is a tool that provides fast mapping of a Microsoft SQL Database into c# for immediate use in an application. The Modeller is based around a an XML language and a set of templates that are used to generate the c# code. The example below shows a sample of an XML model:
+## The DIY Surveys Modeller
+The DIY Surveys Modeller is a tool that provides fast mapping of a Microsoft SQL Database into c# for immediate use in an application. The Modeller is based around a an XML language and a set of templates that are used to generate the c# code. The example below shows a sample of an XML model:
 ```
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE database SYSTEM "Templates\norque.dtd">
@@ -43,7 +43,7 @@ The OnePoint Modeller is a tool that provides fast mapping of a Microsoft SQL Da
 <?neo support="IClassNameData.vtl,IClassNameFactoryBase.vtl,ClassNameBase.vtl,ClassNameFactoryBase.vtl"?>
 <?neo user="ClassName.vtl,ClassNameFactory.vtl"?>
 
-<database name="$db{Framework}" package="OnePoint.PROM.Model" defaultJavaNamingMethod="javaname" defaultIdMethod="native">
+<database name="$db{Framework}" package="DiySurveys.Projects.Model" defaultJavaNamingMethod="javaname" defaultIdMethod="native">
   <!--START-PROJECT-STRUCTURE -->
   <table name="Groups" database="$db{Framework}" javaName="Groups">
     <column name="GroupID"  type="BIGINT" javaType="BIGINT" required="true" primaryKey="true" autoIncrement="true"  description=""  />
@@ -78,7 +78,7 @@ The Modeller is available for use with Microsoft Visual Studio 2019 and can be d
 2. In the folder create another folder called Templates.
 3. In the Templates folder add the templates, which can be downloaded from [here](/VisualStudio/Templates).
 4. In the new folder create your model.xml file and place your Entity model definition in there.
-5. Change the `Custom Tool` property of the model.xml to `OnePointModeller`.
+5. Change the `Custom Tool` property of the model.xml to `DiySurveysModeller`.
 6. Save the `model.xml` file and in doing so it will generate the code c# files in the same folder.
 
 In your Visual Studio project you should have a folder structure that looks similar to this:
@@ -89,8 +89,8 @@ In order to compile the code you will need to include a couple of librearies fro
 
 Name | Description
 ---- | -----------
-OnePoint.Data | The main data access library. Currently geared towards Microsoft SQL Server.
-OnePoint.Logging | A wrapper used by OnePoint.Data to access log4net.
+DiySurveys.Data.SqlClient | The main data access library. Currently geared towards Microsoft SQL Server.
+DiySurveys.Logging | A wrapper used by OnePoint.Data to access log4net.
 log4net | [A logging facility](http://logging.apache.org/log4net/).
 
 ## Using Your Model

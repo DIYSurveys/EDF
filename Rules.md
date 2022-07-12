@@ -1,8 +1,8 @@
 [Back to the top](README.md)
 
 ## Housekeeping
-This section assumes you have read other section on how OPGEDF works. For more information please [click here](README.md).
-It is important that you maintain good housekeeping with your code. Some of the house keeping is done by OPGEDF,
+This section assumes you have read other section on how DIYEDF works. For more information please [click here](README.md).
+It is important that you maintain good housekeeping with your code. Some of the house keeping is done by DIYEDF,
 but it is always up to you make sure you clean up after yourself. This section discusses some of the rules.
 
 ### DataHandler Lifetime

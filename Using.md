@@ -6,12 +6,16 @@ This section assumes you have successfully followed the instruction in the main 
 ### Configure the Environment
 Once you have created a basic model you need to configure the environment for the application.
 The environment uses some settings in the applications config file (web.config or app.config depending on the type of project).
-These must be placed in the `AppSettings` section of the config file:
+These must be placed in the configuration file `System.json` section of the config file:
 ```
-  <appSettings>
-    <add key="ConnectionString" value="MS SQL connection string" />
-    <add key="ConnectionStringFramework" value="data mapping" />   
-  </appSettings>
+  {
+    { "name": "ConnectionString" }
+    { "value": "MS SQL connection string" }
+  },
+  {
+    { "name": "ConnectionStringFramework" }
+    { "value": "data mapping" }
+  }
 ```
 There is a main connection string setting and the subsequent connection strings refer to the database mappings to allow
 access to multiple databases from the same model. The database mappings take the form `ConnectionString{name}` where `{name}`
